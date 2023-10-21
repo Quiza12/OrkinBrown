@@ -10,11 +10,13 @@ import { LandingComponent } from './examples/landing/landing.component';
 import { NucleoiconsComponent } from './components/nucleoicons/nucleoicons.component';
 
 import { OrkinBrownHomeComponent } from './orkinbrown/home/orkinbrown.home.component';
+import { OrkinBrownAboutComponent } from './orkinbrown/about/orkinbrown.about.component';
 
 const routes: Routes =[
-    { path: '', redirectTo: 'home', pathMatch: 'full' },
+    { path: '', redirectTo: 'ob', pathMatch: 'full' },
     
-    { path: 'orkinbrown',       component: OrkinBrownHomeComponent },
+    { path: 'ob',               component: OrkinBrownHomeComponent },
+    { path: 'ob/about',         component: OrkinBrownAboutComponent },
 
     { path: 'home',             component: ComponentsComponent },
     { path: 'user-profile',     component: ProfileComponent },

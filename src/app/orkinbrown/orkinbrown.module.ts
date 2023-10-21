@@ -4,6 +4,8 @@ import { FormsModule } from '@angular/forms';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 import { OrkinBrownHomeComponent } from './home/orkinbrown.home.component';
+import { OrkinBrownAboutComponent } from './about/orkinbrown.about.component';
+
 
 @NgModule({
     imports: [
@@ -12,7 +14,8 @@ import { OrkinBrownHomeComponent } from './home/orkinbrown.home.component';
         NgbModule
     ],
     declarations: [
-        OrkinBrownHomeComponent
+        OrkinBrownHomeComponent,
+        OrkinBrownAboutComponent
     ]
 })
 export class OrkinBrownModule { }
