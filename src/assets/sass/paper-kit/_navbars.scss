@@ -171,6 +171,10 @@
     }
 
     .navbar-nav{
+        // .nav-item-important .nav-link:not(.btn){
+        //     color: #f9f871;
+        //     border-color: #f9f871;
+        // }
         .nav-item .nav-link:not(.btn){
             color: $white-color;
             border-color: $white-color;
