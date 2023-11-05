@@ -14,29 +14,38 @@
                 <div class="col-md-8 mr-auto ml-auto">
                     <h2 class="text-center">Get in touch</h2>
                     <h4 class="text-center description">Phone: 011 453 4001</h4>
-                    <form class="contact-form">
+                    <form [formGroup]="contactForm" class="contact-form"  (ngSubmit)="onSubmit()">
                         <div class="row">
-                            <div class="col-md-6">
+                            <div class="col-md-4">
                                 <label>Name</label>
                                 <div class="input-group" [ngClass]="{'input-group-focus':focus===true}">
                                     <div class="input-group-prepend">
                                       <span class="input-group-text"><i class="nc-icon nc-single-02"></i></span>
                                     </div>
-                                    <input type="text" class="form-control" placeholder="Name" (focus)="focus=true" (blur)="focus=false" >
+                                    <input type="text" class="form-control" placeholder="Name" id="name" name="name" formControlName="name" (focus)="focus=true" (blur)="focus=false" >
                                 </div>
                             </div>
-                            <div class="col-md-6">
+                            <div class="col-md-4">
                                 <label>Email</label>
                                 <div class="input-group" [ngClass]="{'input-group-focus':focus1===true}">
                                     <div class="input-group-prepend">
                                       <span class="input-group-text">  <i class="nc-icon nc-email-85"></i></span>
                                     </div>
-                                    <input type="text" class="form-control" placeholder="Email" (focus)="focus1=true" (blur)="focus1=false" >
+                                    <input type="text" class="form-control" placeholder="Email" id="email" name="email" formControlName="email" (focus)="focus1=true" (blur)="focus1=false" >
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <label>Phone Number</label>
+                                <div class="input-group" [ngClass]="{'input-group-focus':focus1===true}">
+                                    <div class="input-group-prepend">
+                                      <span class="input-group-text">  <i class="nc-icon nc-mobile"></i></span>
+                                    </div>
+                                    <input type="text" class="form-control" placeholder="Phone Number" id="phone" name="phone" formControlName="phone" (focus)="focus1=true" (blur)="focus1=false" >
                                 </div>
                             </div>
                         </div>
                         <label>Message</label>
-                        <textarea class="form-control" rows="4" placeholder="Tell us what you need..."></textarea>
+                        <textarea class="form-control" rows="4" placeholder="Tell us what you need..." id="message" name="message" formControlName="message" ></textarea>
                         <div class="row">
                             <div class="col-md-4 mr-auto ml-auto">
                                 <button class="btn btn-info btn-round btn-lg">Send Message</button>

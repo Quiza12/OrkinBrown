@@ -1,7 +1,8 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { HttpClientModule } from '@angular/common/http';
 
 import { OrkinBrownHomeComponent } from './home/orkinbrown.home.component';
 import { OrkinBrownAboutComponent } from './about/orkinbrown.about.component';
@@ -10,13 +11,16 @@ import { OrkinBrownServicesComponent } from './services/orkinbrown.services.comp
 import { OrkinBrownTestimonialsComponent } from './testimonials/orkinbrown.testimonials.component';
 import { OrkinBrownJobsComponent } from './jobs/orkinbrown.jobs.component';
 import { OrkinBrownContactComponent } from './contact/orkinbrown.contact.component';
+import { AzureService } from 'app/shared/services/azure.service';
 
 
 @NgModule({
     imports: [
         CommonModule,
         FormsModule,
-        NgbModule
+        NgbModule,
+        HttpClientModule,
+        ReactiveFormsModule
     ],
     declarations: [
         OrkinBrownHomeComponent,
@@ -26,6 +30,9 @@ import { OrkinBrownContactComponent } from './contact/orkinbrown.contact.compone
         OrkinBrownTestimonialsComponent,
         OrkinBrownJobsComponent,
         OrkinBrownContactComponent
+    ],
+    providers: [
+        AzureService
     ]
 })
 export class OrkinBrownModule { }

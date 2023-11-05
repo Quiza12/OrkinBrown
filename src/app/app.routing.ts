@@ -16,6 +16,7 @@ import { OrkinBrownServicesComponent } from './orkinbrown/services/orkinbrown.se
 import { OrkinBrownJobsComponent } from './orkinbrown/jobs/orkinbrown.jobs.component';
 import { OrkinBrownTestimonialsComponent } from './orkinbrown/testimonials/orkinbrown.testimonials.component';
 import { OrkinBrownContactComponent } from './orkinbrown/contact/orkinbrown.contact.component';
+import { OrkinBrownContactResultComponent } from './orkinbrown/contact/orkinbrown.contact.result.component';
 
 const routes: Routes =[
     { path: '', redirectTo: 'ob', pathMatch: 'full' },
@@ -23,6 +24,7 @@ const routes: Routes =[
     { path: 'ob',               component: OrkinBrownHomeComponent },
     { path: 'ob/about',         component: OrkinBrownAboutComponent },
     { path: 'ob/contact',       component: OrkinBrownContactComponent },
+    { path: 'ob/contact/:result',  component: OrkinBrownContactResultComponent },
     { path: 'ob/services',      component: OrkinBrownServicesComponent },
     { path: 'ob/team',          component: OrkinBrownTeamComponent },
     { path: 'ob/testimonials',  component: OrkinBrownTestimonialsComponent },
