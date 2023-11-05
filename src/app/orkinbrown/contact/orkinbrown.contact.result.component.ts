@@ -26,11 +26,11 @@ export class OrkinBrownContactResultComponent implements OnInit {
   determineResponse() {
     if (this.result === "success") {
       this.header = "Thanks for contacting us";
-      this.image = "assets/img/orkinbrown/contact/success.svg";
+      this.image = "assets/img/contact/success.svg";
       this.firstMessage = "We\'ll be in touch within 24 hours.";
     } else {
       this.header = "Uh Oh!";
-      this.image = "assets/img/orkinbrown/contact/error.svg";
+      this.image = "assets/img/contact/error.svg";
       this.firstMessage = "Something\'s gone wrong. Please email us at orkin@tci.co.za instead.";
     }
   }

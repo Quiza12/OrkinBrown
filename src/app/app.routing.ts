@@ -3,12 +3,6 @@ import { CommonModule, } from '@angular/common';
 import { BrowserModule  } from '@angular/platform-browser';
 import { Routes, RouterModule } from '@angular/router';
 
-import { ComponentsComponent } from './components/components.component';
-import { ProfileComponent } from './examples/profile/profile.component';
-import { SignupComponent } from './examples/signup/signup.component';
-import { LandingComponent } from './examples/landing/landing.component';
-import { NucleoiconsComponent } from './components/nucleoicons/nucleoicons.component';
-
 import { OrkinBrownHomeComponent } from './orkinbrown/home/orkinbrown.home.component';
 import { OrkinBrownAboutComponent } from './orkinbrown/about/orkinbrown.about.component';
 import { OrkinBrownTeamComponent } from './orkinbrown/team/orkinbrown.team.component';
@@ -19,22 +13,16 @@ import { OrkinBrownContactComponent } from './orkinbrown/contact/orkinbrown.cont
 import { OrkinBrownContactResultComponent } from './orkinbrown/contact/orkinbrown.contact.result.component';
 
 const routes: Routes =[
-    { path: '', redirectTo: 'ob', pathMatch: 'full' },
+    { path: '', redirectTo: 'home', pathMatch: 'full' },
     
-    { path: 'ob',               component: OrkinBrownHomeComponent },
-    { path: 'ob/about',         component: OrkinBrownAboutComponent },
-    { path: 'ob/contact',       component: OrkinBrownContactComponent },
-    { path: 'ob/contact/:result',  component: OrkinBrownContactResultComponent },
-    { path: 'ob/services',      component: OrkinBrownServicesComponent },
-    { path: 'ob/team',          component: OrkinBrownTeamComponent },
-    { path: 'ob/testimonials',  component: OrkinBrownTestimonialsComponent },
-    { path: 'ob/jobs',          component: OrkinBrownJobsComponent },
-
-    { path: 'home',             component: ComponentsComponent },
-    { path: 'user-profile',     component: ProfileComponent },
-    { path: 'signup',           component: SignupComponent },
-    { path: 'landing',          component: LandingComponent },
-    { path: 'nucleoicons',      component: NucleoiconsComponent }
+    { path: 'home',             component: OrkinBrownHomeComponent },
+    { path: 'about',            component: OrkinBrownAboutComponent },
+    { path: 'contact',          component: OrkinBrownContactComponent },
+    { path: 'contact/:result',  component: OrkinBrownContactResultComponent },
+    { path: 'services',         component: OrkinBrownServicesComponent },
+    { path: 'team',             component: OrkinBrownTeamComponent },
+    { path: 'testimonials',     component: OrkinBrownTestimonialsComponent },
+    { path: 'jobs',             component: OrkinBrownJobsComponent },
 ];
 
 @NgModule({

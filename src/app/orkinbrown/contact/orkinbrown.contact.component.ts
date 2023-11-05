@@ -36,7 +36,7 @@ export class OrkinBrownContactComponent implements OnInit {
 
   routeResult(result: string, message: string) {
     console.log(message)
-    this.router.navigate(["/ob/contact", result]);
+    this.router.navigate(["/contact", result]);
   }
 
 }
