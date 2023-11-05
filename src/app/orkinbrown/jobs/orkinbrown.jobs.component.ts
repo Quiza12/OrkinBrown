@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Job } from '../../classes/job';
+import { JobCards } from '../../data/job-cards.service';
 
 @Component({
     selector: 'orkinbrown-app-jobs',
@@ -9,9 +11,13 @@ import { Component, OnInit } from '@angular/core';
 export class OrkinBrownJobsComponent implements OnInit {
   focus: any;
   focus1: any;
+  jobCards: Job[];
+  submissionEmail: string = "Quiza12@live.com";
 
   constructor() { }
 
-  ngOnInit() {}
+  ngOnInit() {
+    this.jobCards = new JobCards().jobCards;
+  }
 
 }

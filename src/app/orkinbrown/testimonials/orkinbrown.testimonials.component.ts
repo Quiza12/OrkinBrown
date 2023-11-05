@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { Testimonial } from '../../classes/testimonial';
+import { Testimonials } from '../../data/testimonials.service';
+
 
 @Component({
     selector: 'orkinbrown-app-testimonials',
@@ -9,9 +12,12 @@ import { Component, OnInit } from '@angular/core';
 export class OrkinBrownTestimonialsComponent implements OnInit {
   focus: any;
   focus1: any;
+  testimomnials: Testimonial[];
 
   constructor() { }
 
-  ngOnInit() {}
+  ngOnInit() {
+    this.testimomnials = new Testimonials().testimonials;
+  }
 
 }

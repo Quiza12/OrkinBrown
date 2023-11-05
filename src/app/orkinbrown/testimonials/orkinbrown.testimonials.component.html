@@ -12,54 +12,23 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-8 mr-auto ml-auto">
-                    <h2 class="title">Don't take our word for it - hear from our satisfied clients</h2>
+                    <h2 class="title">Hear from our satisfied clients</h2>
                 </div>
             </div>
             <div class="row">
 
-                <div class="col-md-6 mr-auto ml-auto">
-                    <div class="rounded job-card">
-                        <h4>Review Title</h4>
+                <div class="col-md-6 mr-auto ml-auto" *ngFor="let testimonial of testimomnials; let i = index">
+                    <div class="rounded testimonial" >
+                        <h4>{{testimonial.title}}</h4>
                         <br/>
-                        <p><b>"Great service!"</b></p>
+                        <p><b>"{{testimonial.tagline}}"</b></p>
                         <br/>
-                        <p>If you want to take your business to the next level, use Orkin Brown and Associates and don't look any further.</p>
-                    </div>
-                </div>
-                <div class="col-md-6 mr-auto ml-auto">
-                    <div class="rounded job-card">
-                        <h4>Review Title</h4>
-                        <br/>
-                        <p><b>"Nothing but love!"</b></p>
-                        <br/>
-                        <p>Everyone's on the same page. Many of our people are not very organized naturally, so Orkin Brown and Associates is a godsend!</p>
+                        <p>{{testimonial.review}}</p>
                     </div>
                 </div>
             
             </div>
             <br/>
-            <div class="row">
-
-                <div class="col-md-6 mr-auto ml-auto">
-                    <div class="rounded job-card">
-                        <h4>Review Title</h4>
-                        <br/>
-                        <p><b>"Cracking job!"</b></p>
-                        <br/>
-                        <p>With Orkin Brown and Associates, we have finally accomplished things that have been waiting forever to get done.</p>
-                    </div>
-                </div>
-                <div class="col-md-6 mr-auto ml-auto">
-                    <div class="rounded job-card">
-                        <h4>Review Title</h4>
-                        <br/>
-                        <p><b>"Brilliant!"</b></p>
-                        <br/>
-                        <p>I would recommend Orkin Brown and Associates for anyone trying to get the word out about their business. It has saved me so much time!</p>
-                    </div>
-                </div>
-
-            </div>
         </div>
     </div>
 </div>
