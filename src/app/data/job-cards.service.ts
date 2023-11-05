@@ -3,7 +3,7 @@ import { Job } from "../classes/job";
 export class JobCards {
 
     jobCards: Job[] = [
-        new Job('Senior Accountant 1',
+        new Job('Senior Accountant',
         'Johannesburg Office (not remote)',
         '3-5 years experience',
         [
@@ -14,7 +14,7 @@ export class JobCards {
             'Critical thinking'
         ],
         'Competitive rates'),
-        new Job('Senior Accountant 2',
+        new Job('Senior Auditor',
         'Johannesburg Office (not remote)',
         '3-5 years experience',
         [
@@ -25,7 +25,7 @@ export class JobCards {
             'Critical thinking'
         ],
         'Competitive rates'),
-        new Job('Senior Accountant 3',
+        new Job('Senior Portfolio Manager',
         'Johannesburg Office (not remote)',
         '3-5 years experience',
         [
