@@ -14,7 +14,6 @@ import { OrkinBrownContactResultComponent } from './components/contact/orkinbrow
 
 const routes: Routes =[
     { path: '', redirectTo: 'home', pathMatch: 'full' },
-    
     { path: 'home',             component: OrkinBrownHomeComponent },
     { path: 'about',            component: OrkinBrownAboutComponent },
     { path: 'contact',          component: OrkinBrownContactComponent },
@@ -22,7 +21,8 @@ const routes: Routes =[
     { path: 'services',         component: OrkinBrownServicesComponent },
     { path: 'team',             component: OrkinBrownTeamComponent },
     { path: 'testimonials',     component: OrkinBrownTestimonialsComponent },
-    { path: 'jobs',             component: OrkinBrownJobsComponent },
+    { path: 'careers',          component: OrkinBrownJobsComponent },
+    { path: '**', redirectTo: 'home', pathMatch: 'full' }
 ];
 
 @NgModule({
