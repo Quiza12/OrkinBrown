@@ -5,10 +5,10 @@ import { Routes, RouterModule } from '@angular/router';
 
 import { OrkinBrownHomeComponent } from './components/home/orkinbrown.home.component';
 import { OrkinBrownAboutComponent } from './components/about/orkinbrown.about.component';
-import { OrkinBrownTeamComponent } from './components/team/orkinbrown.team.component';
+// import { OrkinBrownTeamComponent } from './components/team/orkinbrown.team.component';
 import { OrkinBrownServicesComponent } from './components/services/orkinbrown.services.component';
 import { OrkinBrownJobsComponent } from './components/jobs/orkinbrown.jobs.component';
-import { OrkinBrownTestimonialsComponent } from './components/testimonials/orkinbrown.testimonials.component';
+// import { OrkinBrownTestimonialsComponent } from './components/testimonials/orkinbrown.testimonials.component';
 import { OrkinBrownContactComponent } from './components/contact/orkinbrown.contact.component';
 import { OrkinBrownContactResultComponent } from './components/contact/orkinbrown.contact.result.component';
 
@@ -19,9 +19,9 @@ const routes: Routes =[
     { path: 'contact',          component: OrkinBrownContactComponent },
     { path: 'contact/:result',  component: OrkinBrownContactResultComponent },
     { path: 'services',         component: OrkinBrownServicesComponent },
-    { path: 'team',             component: OrkinBrownTeamComponent },
-    { path: 'testimonials',     component: OrkinBrownTestimonialsComponent },
-    { path: 'careers',          component: OrkinBrownJobsComponent },
+    // { path: 'team',             component: OrkinBrownTeamComponent },
+    // { path: 'testimonials',     component: OrkinBrownTestimonialsComponent },
+    { path: 'positions',          component: OrkinBrownJobsComponent },
     { path: '**', redirectTo: 'home', pathMatch: 'full' }
 ];
 
