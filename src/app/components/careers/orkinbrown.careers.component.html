@@ -1,0 +1,41 @@
+<div class="page-header" data-parallax="true" style="background-image: url('./assets/img/jobs/background-jobs-stacked-rocks.png');">
+    <div class="filter"></div>
+    <div class="container">
+        <div class="motto text-center">
+            <h1>Careers</h1>
+            <br />
+        </div>
+    </div>
+</div>
+<div class="main">
+    <div class="section text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 mr-auto ml-auto">
+                    <h2 class="title">We're currently hiring for the following positions</h2>
+                    <h5>Applications will be made via email. Clicking 'Apply Now' will open up your email application with a pre-populated application template.</h5>
+                    <br>
+                    <h5><b>Please remember to attach your resume before sending.</b></h5>
+                </div>
+            </div>
+            <br />
+            <div class="row">
+                <div class="col-md-4 mr-auto ml-auto" *ngFor="let job of jobCards; let i = index">
+                    <div class="rounded job-card">
+                        <h4>{{job.title}}</h4>
+                        <br/>
+                        <p><b>{{job.experience}}</b></p>
+                        <p><b>{{job.location}}</b></p>
+                        <p>The candidate should have the following skills:</p>
+                        <ul>
+                            <li *ngFor="let skill of job.skills; let j = index">{{skill}}</li>
+                        </ul>
+                        <p>{{job.pay}}</p>
+                        <br/>
+                        <a href="mailto:{{submissionEmail}}?subject=Application for the {{job.title}} role&body=Hi, %0D%0D My name is {INSERT_NAME} and I am applying for the role of {{job.title}}. %0D%0D You can contact me on {PHONE_NUMBER} and/or {EMAIL}. %0D%0D Please find my attached resume (please attach!) %0D%0D Thanks" class="btn btn-warning btn-round">Apply Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

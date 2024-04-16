@@ -9,7 +9,7 @@ import { OrkinBrownAboutComponent } from './about/orkinbrown.about.component';
 import { OrkinBrownTeamComponent } from './team/orkinbrown.team.component';
 import { OrkinBrownServicesComponent } from './services/orkinbrown.services.component';
 import { OrkinBrownTestimonialsComponent } from './testimonials/orkinbrown.testimonials.component';
-import { OrkinBrownJobsComponent } from './jobs/orkinbrown.jobs.component';
+import { OrkinBrownCareersComponent } from './careers/orkinbrown.careers.component';
 import { OrkinBrownContactComponent } from './contact/orkinbrown.contact.component';
 import { AzureService } from 'app/shared/services/azure.service';
 
@@ -28,7 +28,7 @@ import { AzureService } from 'app/shared/services/azure.service';
         OrkinBrownTeamComponent,
         OrkinBrownServicesComponent,
         OrkinBrownTestimonialsComponent,
-        OrkinBrownJobsComponent,
+        OrkinBrownCareersComponent,
         OrkinBrownContactComponent
     ],
     providers: [

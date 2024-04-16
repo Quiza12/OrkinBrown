@@ -7,7 +7,7 @@ import { OrkinBrownHomeComponent } from './components/home/orkinbrown.home.compo
 import { OrkinBrownAboutComponent } from './components/about/orkinbrown.about.component';
 // import { OrkinBrownTeamComponent } from './components/team/orkinbrown.team.component';
 import { OrkinBrownServicesComponent } from './components/services/orkinbrown.services.component';
-import { OrkinBrownJobsComponent } from './components/jobs/orkinbrown.jobs.component';
+import { OrkinBrownCareersComponent } from './components/careers/orkinbrown.careers.component';
 // import { OrkinBrownTestimonialsComponent } from './components/testimonials/orkinbrown.testimonials.component';
 import { OrkinBrownContactComponent } from './components/contact/orkinbrown.contact.component';
 import { OrkinBrownContactResultComponent } from './components/contact/orkinbrown.contact.result.component';
@@ -21,7 +21,7 @@ const routes: Routes =[
     { path: 'services',         component: OrkinBrownServicesComponent },
     // { path: 'team',             component: OrkinBrownTeamComponent },
     // { path: 'testimonials',     component: OrkinBrownTestimonialsComponent },
-    { path: 'positions',          component: OrkinBrownJobsComponent },
+    { path: 'careers',          component: OrkinBrownCareersComponent },
     { path: '**', redirectTo: 'home', pathMatch: 'full' }
 ];
 
