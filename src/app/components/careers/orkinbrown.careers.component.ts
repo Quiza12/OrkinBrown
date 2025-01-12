@@ -11,13 +11,15 @@ import { JobCards } from '../../data/job-cards.service';
 export class OrkinBrownCareersComponent implements OnInit {
   focus: any;
   focus1: any;
-  jobCards: Job[];
+  auditJobCards: Job[];
+  taxationJobCards: Job[];
   submissionEmail: string = "Quiza12@live.com";
 
   constructor() { }
 
   ngOnInit() {
-    this.jobCards = new JobCards().jobCards;
+    this.auditJobCards = new JobCards().auditJobCards;
+    this.taxationJobCards = new JobCards().taxationJobCards;
   }
 
 }

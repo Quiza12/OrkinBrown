@@ -1,6 +1,6 @@
 # Orkin Brown and Associates
 
-Orkin Brown and Associates is an audit, accounting and tax practice based out of 43 St Margaret Road, Edenvale, Gauteng. The practice is registered with the Independent Regulatory Board for Auditors (IRBA). It is also an accredited training office with the South African Institute of Chartered Accountants (SAICA). Orkin Brown and Associates performs independent audit, independent reviews as well as compilation reports for a wide range of clients across various industries.
+Orkin Brown and Associates is an audit, accounting and taxation practice based out of 43 St Margaret Road, Edenvale, Gauteng. The practice is registered with the Independent Regulatory Board for Auditors (IRBA). It is also an accredited training office with the South African Institute of Chartered Accountants (SAICA). Orkin Brown and Associates performs independent audit, independent reviews as well as compilation reports for a wide range of clients across various industries.
 
 ## Thanks and Acknowledgments
 
