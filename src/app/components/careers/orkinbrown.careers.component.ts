@@ -13,7 +13,7 @@ export class OrkinBrownCareersComponent implements OnInit {
   focus1: any;
   auditJobCards: Job[];
   taxationJobCards: Job[];
-  submissionEmail: string = "hilton@orkinbrown.co.za";
+  submissionEmail: string = "hr@orkinbrown.co.za";
 
   constructor() { }
 

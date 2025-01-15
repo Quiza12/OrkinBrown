@@ -27,7 +27,7 @@ export class OrkinBrownContactResultComponent implements OnInit {
     if (this.result === "success") {
       this.header = "Thanks for contacting us";
       this.image = "assets/img/contact/success.svg";
-      this.firstMessage = "We\'ll be in touch within 24 hours.";
+      this.firstMessage = "We\'ll be in touch soon.";
     } else {
       this.header = "Uh Oh!";
       this.image = "assets/img/contact/error.svg";
