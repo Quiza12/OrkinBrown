@@ -38,9 +38,8 @@ export class JobCards {
             'Salary dependant on qualifications and experience'),
         new Job('Audit Junior',
         'Johannesburg Office (not remote)',
-        '',
+        'Seeking to become Chartered Accountants',
         [
-            'Seeking to become Chartered Accountants',
             'Wanting to enter or continue with SAICA training contacts',
             'Candidates are required to study part-time while completing SAICA training contract',
             'Own transport essential',
